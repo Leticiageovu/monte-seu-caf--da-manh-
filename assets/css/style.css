@@ -1,0 +1,142 @@
+
+body {
+    background-color: #f9f5f0;
+    color: #3a2815;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #5a3b1c;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-style: italic;
+    color: #8a6d4b;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.menu-item {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+.menu-image {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.menu-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.menu-details {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:  #461e00;
+}
+.menu-description {
+    font-size: 1rem;
+    color: #5a3b1c;
+    margin-bottom: 20px;
+}
+.menu-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5a3b1c;
+    margin-bottom: 15px;
+}
+.price-note {
+    font-size: 0.8rem;
+    color:  #3a2815;
+}
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #000000;
+}
+
+.footer img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+    }
+    
+    .menu-image {
+        min-width: 100%;
+    }
+}
+
+.btn-order {
+    background-color: #5a3b1c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-order:hover {
+    background-color: #3a2815;
+}
+
+.price-container {
+    position: relative;
+}
+
+.price-placeholder {
+    position: relative;
+    display: inline-block;
+}
+
+.price-zeros {
+    visibility: hidden;
+}
+
+.price-real {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5a3b1c;
+}
